@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b0a">
+  <meta name="description" content="Byte & Beyond — a faceless learning journal exploring cybersecurity, GATE CSE, projects, and computer science fundamentals.">
+  <title>Byte & Beyond — Learn. Build. Secure.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Byte and Beyond home">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span>BYTE <i>&amp;</i> BEYOND<span class="brand-dot">.</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="experience.html">My Experience</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="learning.html">Blogs & Learning</a>
+      <a href="projects.html">Projects</a>
+      <a class="nav-cta" href="#contact">Connect <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> AN OPEN LEARNING JOURNAL <span class="eyebrow-line"></span> 2026—∞</div>
+        <h1>Learning the code.<br><span class="green-text">Securing the future.</span></h1>
+        <p class="hero-lede">A faceless learning journey through <strong>cybersecurity</strong>, <strong>GATE CSE</strong> and the systems that power our digital world.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#journey">Explore my journey <span>↘</span></a>
+          <a class="button button-ghost" href="#projects"><span class="play-icon">▷</span> See projects</a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="meta-symbol">⌁</span> Learning in public</span>
+          <span><span class="meta-symbol">◉</span> Beginner-friendly notes</span>
+          <span><span class="meta-symbol">⌘</span> Built with curiosity</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal" data-tilt>
+        <div class="visual-top"><span>BB://LEARNING_SESSION</span><span class="window-dots"><b></b><b></b><b></b></span></div>
+        <div class="terminal">
+          <div class="terminal-line"><span class="terminal-muted">guest@byte-beyond</span><span class="terminal-green">:~$</span> whoami</div>
+          <div class="terminal-output">curious mind<span class="blink">_</span></div>
+          <div class="terminal-line"><span class="terminal-muted">guest@byte-beyond</span><span class="terminal-green">:~$</span> cat mission.txt</div>
+          <div class="terminal-output terminal-message">Learn deeply.<br>Build useful things.<br>Make security understandable.</div>
+          <div class="terminal-line"><span class="terminal-muted">guest@byte-beyond</span><span class="terminal-green">:~$</span> <span class="typing" data-typing="explore|practice|document|repeat">explore</span><span class="blink">_</span></div>
+        </div>
+        <div class="visual-bottom"><span>STATUS: <b>LEARNING</b></span><span>MODE: <b>BUILD IN PUBLIC</b></span></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-chip chip-one">01 / CYBERSECURITY</div>
+        <div class="floating-chip chip-two">02 / GATE CSE</div>
+      </div>
+      <div class="hero-scroll"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="ticker" aria-label="Topics">
+      <div class="ticker-track">
+        <span>CYBERSECURITY</span><b>✳</b><span>COMPUTER SCIENCE</span><b>✳</b><span>GATE CSE</span><b>✳</b><span>HANDS-ON LABS</span><b>✳</b><span>LEARN IN PUBLIC</span><b>✳</b>
+        <span>CYBERSECURITY</span><b>✳</b><span>COMPUTER SCIENCE</span><b>✳</b><span>GATE CSE</span><b>✳</b><span>HANDS-ON LABS</span><b>✳</b><span>LEARN IN PUBLIC</span><b>✳</b>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad" id="journey">
+      <div class="section-heading reveal">
+        <div><span class="section-kicker">01 / THE JOURNEY</span><h2>Not an expert.<br><span class="green-text">A work in progress.</span></h2></div>
+        <p class="section-intro">Byte &amp; Beyond is where I document what I learn, what I build, and what I still need to figure out. No perfect-guru act—just consistent progress.</p>
+      </div>
+      <div class="journey-grid">
+        <article class="journey-card card reveal" data-tilt><div class="card-index">01</div><div class="card-icon">⌘</div><h3>Learn</h3><p>Understand concepts from the fundamentals, one small step at a time.</p><span class="card-foot">THEORY → CLARITY</span></article>
+        <article class="journey-card card reveal" data-tilt><div class="card-index">02</div><div class="card-icon">⌁</div><h3>Practice</h3><p>Turn notes into problem-solving, safe labs, and practical experiments.</p><span class="card-foot">KNOWLEDGE → SKILL</span></article>
+        <article class="journey-card card reveal" data-tilt><div class="card-index">03</div><div class="card-icon">↗</div><h3>Document</h3><p>Share beginner-friendly explanations in clear, beginner-friendly language for others on the same path.</p><span class="card-foot">PROGRESS → COMMUNITY</span></article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad split-section" id="cyber">
+      <div class="split-copy reveal">
+        <span class="section-kicker">02 / SECURITY LAB</span>
+        <h2>Think like a defender.<br><span class="green-text">Learn how systems work.</span></h2>
+        <p>Cybersecurity begins with understanding the basics. This space will grow with practical notes, legal lab exercises, tools, and project write-ups.</p>
+        <a class="text-link" href="#blog">Explore cyber notes <span>↗</span></a>
+      </div>
+      <div class="topic-console reveal">
+        <div class="console-header"><span><i></i> LEARNING_PATH.json</span><span>● LIVE TRACK</span></div>
+        <div class="console-row"><span class="console-num">01</span><div><b>Networking fundamentals</b><small>DNS · TCP/IP · HTTP/HTTPS</small></div><span class="topic-state">START HERE</span></div>
+        <div class="console-row"><span class="console-num">02</span><div><b>Linux &amp; command line</b><small>Files · Permissions · Shell basics</small></div><span class="topic-state">IN PROGRESS</span></div>
+        <div class="console-row"><span class="console-num">03</span><div><b>Web security basics</b><small>OWASP concepts · Safe testing</small></div><span class="topic-state">UP NEXT</span></div>
+        <div class="console-row"><span class="console-num">04</span><div><b>Hands-on lab notes</b><small>What worked · What failed · Why</small></div><span class="topic-state">DOCUMENT</span></div>
+        <p class="console-note">// Practice only on systems you own or have explicit permission to test.</p>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad gate-section" id="gate">
+      <div class="section-heading reveal">
+        <div><span class="section-kicker">03 / GATE CSE</span><h2>Strong fundamentals.<br><span class="green-text">One concept at a time.</span></h2></div>
+        <p class="section-intro">Simple notes, solved examples, revision checkpoints and mistakes worth remembering—made while preparing, not after pretending to know everything.</p>
+      </div>
+      <div class="gate-grid">
+        <article class="gate-card reveal"><span class="gate-tag">CS / 01</span><div class="gate-icon">⌗</div><h3>Data Structures &amp; Algorithms</h3><p>Complexity, arrays, trees, graphs and problem-solving patterns.</p><a href="#blog">View study path <span>↗</span></a></article>
+        <article class="gate-card reveal"><span class="gate-tag">CS / 02</span><div class="gate-icon">▤</div><h3>DBMS</h3><p>Keys, normalization, SQL, transactions and indexing.</p><a href="#blog">View study path <span>↗</span></a></article>
+        <article class="gate-card reveal"><span class="gate-tag">CS / 03</span><div class="gate-icon">⌘</div><h3>Operating Systems</h3><p>Processes, scheduling, memory and synchronization.</p><a href="#blog">View study path <span>↗</span></a></article>
+        <article class="gate-card reveal"><span class="gate-tag">CS / 04</span><div class="gate-icon">⌁</div><h3>Computer Networks</h3><p>Layers, protocols, addressing and network fundamentals.</p><a href="#blog">View study path <span>↗</span></a></article>
+      </div>
+      <p class="small-note">Study roadmap preview · Topics will be updated as the learning journey progresses.</p>
+    </section>
+
+    <section class="section-wrap section-pad" id="blog">
+      <div class="section-heading reveal">
+        <div><span class="section-kicker">04 / THE NOTEBOOK</span><h2>Latest <span class="green-text">field notes.</span></h2></div>
+        <p class="section-intro">Short, useful explanations from the learning process. These are starter examples; replace them with your own verified notes before publishing.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card reveal"><div class="blog-art art-network"><span>DNS</span><i>↔</i><span>IP</span><div class="art-grid"></div></div><div class="blog-meta"><span>CYBERSECURITY</span><span>05 MIN READ</span></div><h3>DNS, explained without the jargon</h3><p>How a domain name finds the server behind a website.</p><a href="#contact" class="text-link">Read note <span>↗</span></a></article>
+        <article class="blog-card reveal"><div class="blog-art art-db"><span>SELECT</span><span>*</span><span>FROM</span><span>basics;</span></div><div class="blog-meta"><span>GATE / DBMS</span><span>06 MIN READ</span></div><h3>What database normalization tries to solve</h3><p>A first look at reducing repeated data and update anomalies.</p><a href="#contact" class="text-link">Read note <span>↗</span></a></article>
+        <article class="blog-card reveal"><div class="blog-art art-linux"><span>guest@bb</span><strong>~$</strong><i>ls -la</i><b>▌</b></div><div class="blog-meta"><span>CYBERSECURITY</span><span>04 MIN READ</span></div><h3>Three Linux commands to know first</h3><p>A tiny starter kit for navigating the terminal.</p><a href="#contact" class="text-link">Read note <span>↗</span></a></article>
+      </div>
+      <div class="center-note">BLOG ARTICLES ARE STARTER PREVIEWS — FULL POSTS CAN BE ADDED NEXT.</div>
+    </section>
+
+    <section class="section-wrap section-pad project-section" id="projects">
+      <div class="section-heading reveal">
+        <div><span class="section-kicker">05 / BUILD LOG</span><h2>Small experiments.<br><span class="green-text">Real learning.</span></h2></div>
+        <p class="section-intro">A place for prototypes, lab notes and code. Projects will be marked honestly as planned, in progress or completed.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal" data-tilt><div class="project-top"><span class="project-symbol">⌘</span><span class="project-status"><i></i> LEARNING</span></div><span class="project-type">WEB / LEARNING</span><h3>Byte &amp; Beyond</h3><p>A personal knowledge base to document cybersecurity and GATE preparation.</p><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="#home" class="project-link" aria-label="Back to home">↗</a></article>
+        <article class="project-card reveal" data-tilt><div class="project-top"><span class="project-symbol">◉</span><span class="project-status"><i></i> PLANNED</span></div><span class="project-type">SECURITY / TOOL</span><h3>Safe URL checker</h3><p>A learning project exploring URL structure, reputation signals and user awareness.</p><div class="tech-tags"><span>Python</span><span>Web security</span><span>Research</span></div><span class="project-link muted">↗</span></article>
+        <article class="project-card reveal" data-tilt><div class="project-top"><span class="project-symbol">▦</span><span class="project-status"><i></i> PLANNED</span></div><span class="project-type">GATE / STUDY TOOL</span><h3>Revision tracker</h3><p>A lightweight way to track topics, practice questions and revision sessions.</p><div class="tech-tags"><span>JavaScript</span><span>Study system</span></div><span class="project-link muted">↗</span></article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad resource-section" id="resources">
+      <div class="section-heading reveal">
+        <div><span class="section-kicker">06 / TOOLKIT</span><h2>Resources worth <span class="green-text">keeping.</span></h2></div>
+        <p class="section-intro">A starter list of reputable learning resources. Always check the official source and current terms before using a tool or course.</p>
+      </div>
+      <div class="resource-list reveal">
+        <a href="https://skills.github.com/" target="_blank" rel="noopener noreferrer"><span class="resource-icon">⌘</span><span><b>GitHub Skills</b><small>Learn GitHub through practical exercises</small></span><span class="resource-category">DEVELOPMENT</span><span class="resource-arrow">↗</span></a>
+        <a href="https://portswigger.net/web-security" target="_blank" rel="noopener noreferrer"><span class="resource-icon">⌁</span><span><b>PortSwigger Web Security Academy</b><small>Free web security learning and legal labs</small></span><span class="resource-category">CYBERSECURITY</span><span class="resource-arrow">↗</span></a>
+        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer"><span class="resource-icon">◇</span><span><b>MDN Web Docs</b><small>Reference for HTML, CSS and JavaScript</small></span><span class="resource-category">WEB DEV</span><span class="resource-arrow">↗</span></a>
+        <a href="https://gate2026.iitg.ac.in/" target="_blank" rel="noopener noreferrer"><span class="resource-icon">▤</span><span><b>GATE official website archive</b><small>Official exam information; check the current GATE cycle's site</small></span><span class="resource-category">GATE</span><span class="resource-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad about-section" id="about">
+      <div class="about-terminal reveal">
+        <div class="console-header"><span><i></i> ABOUT_BYTE_BEYOND.md</span><span>UTF-8</span></div>
+        <p><span class="md-green">#</span> Why this space exists</p>
+        <p>This brand is a public notebook for learning computer science, exploring cybersecurity responsibly, and preparing for GATE CSE.</p>
+        <p><span class="md-green">##</span> The rules</p>
+        <ul><li>Understand before memorising.</li><li>Practice legally and ethically.</li><li>Share mistakes as well as progress.</li><li>Credit sources and verify technical claims.</li></ul>
+        <p class="about-signoff">No face reveal. Just the work. <span class="blink">_</span></p>
+      </div>
+      <div class="about-side reveal"><span class="section-kicker">07 / ABOUT THE BRAND</span><h2>A quiet identity.<br><span class="green-text">An open notebook.</span></h2><p>Byte &amp; Beyond is a faceless, student-led learning brand. The focus is on useful explanations, honest progress and building skills one step at a time.</p><div class="about-stat-row"><div><strong>01</strong><span>Learn</span></div><div><strong>02</strong><span>Build</span></div><div><strong>03</strong><span>Share</span></div></div></div>
+    </section>
+
+    <section class="section-wrap contact-section" id="contact">
+      <div class="contact-box reveal">
+        <span class="section-kicker">08 / OPEN CHANNEL</span>
+        <h2>Learning something too?<br><span class="green-text">Let's connect.</span></h2>
+        <p>Found a useful resource, spotted an error, or learning the same topics? Reach out through the platform where this brand is active.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Find on LinkedIn <span>↗</span></a>
+          <a class="button button-ghost" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Follow on Instagram <span>↗</span></a>
+        </div>
+        <p class="contact-note">These links currently open the platform homepages. Replace them with your actual profile links before publishing.</p>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad" id="featured-pages">
+      <div class="section-heading reveal">
+        <div><span class="section-kicker">06 / EXPLORE MORE</span><h2>More than a<br><span class="green-text">learning log.</span></h2></div>
+        <p class="section-intro">Explore milestones, audio episodes, and updates across separate pages.</p>
+      </div>
+      <div class="journey-grid">
+        <a class="card reveal" href="experience.html"><div class="card-index">01</div><div class="card-icon">✧</div><h3>My Experience</h3><p>Certificates, events, projects, and milestones from the journey.</p><span class="card-foot">VIEW MILESTONES ↗</span></a>
+        <a class="card reveal" href="podcast.html"><div class="card-index">02</div><div class="card-icon">◉</div><h3>Podcast Room</h3><p>Audio episodes, descriptions, and notes in one place.</p><span class="card-foot">LISTEN & REFLECT ↗</span></a>
+        <a class="card reveal" href="learning.html"><div class="card-index">03</div><div class="card-icon">⌁</div><h3>Daily Learning</h3><p>Cybersecurity notes, GATE preparation, and learning updates.</p><span class="card-foot">READ UPDATES ↗</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>BYTE <i>&amp;</i> BEYOND<span class="brand-dot">.</span></span></a>
+    <span>BUILT WITH CURIOSITY <b>✳</b> UPDATED AS I LEARN</span>
+    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    <p class="footer-bottom">© <span id="year"></span> Byte &amp; Beyond. A learning journal, not professional security advice.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
